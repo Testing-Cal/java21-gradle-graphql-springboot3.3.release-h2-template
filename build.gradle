@@ -67,15 +67,19 @@ dependencies {
     }
 
     implementation 'org.json:json:20240303'
-    implementation group: 'io.leangen.graphql', name: 'graphql-spqr-spring-boot-starter', version: '1.0.1'
+
     implementation group: 'commons-io', name: 'commons-io', version: '2.16.1'
     testImplementation group: 'com.h2database', name: 'h2', version: '2.2.224'
     implementation('org.flywaydb:flyway-core:10.15.0')
     implementation('com.h2database:h2:2.2.224')
+
+    implementation group: 'io.leangen.graphql', name: 'graphql-spqr-spring-boot-starter', version: '1.0.0'
     implementation 'com.graphql-java-kickstart:graphql-spring-boot-starter:15.1.0'
     implementation 'com.graphql-java:graphiql-spring-boot-starter:5.0.2'
     implementation 'com.graphql-java-kickstart:graphql-java-tools:13.1.1'
+
     implementation 'org.springframework.boot:spring-boot-starter-validation'
-    //classpath 'org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:3.0'
 }
+
+
 

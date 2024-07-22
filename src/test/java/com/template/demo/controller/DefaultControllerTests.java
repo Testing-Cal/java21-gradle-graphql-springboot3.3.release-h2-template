@@ -1,5 +1,7 @@
 package com.template.demo.controller;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -7,9 +9,7 @@ import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.MockitoAnnotations;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
-import org.springframework.http.ResponseEntity;
 import org.springframework.mock.web.MockHttpServletResponse;
 import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.junit4.SpringRunner;
@@ -17,9 +17,6 @@ import org.springframework.test.util.ReflectionTestUtils;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
-
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 
 /**
  * @author nsingotam
@@ -46,7 +43,7 @@ public class DefaultControllerTests {
     }
 
     private String mockDefaultResponse() {
-        return title + "Hello! You have successfully set up your Java21 GraphQL Gradle SpringBoot:3.3.1 environment by using the Lazsa template. You're all set to start coding. " +
+        return title + "Hello! You have successfully set up your Java21 GraphQL Gradle SpringBoot:3.2.3 environment by using the Lazsa template. You're all set to start coding. " +
             "<br/> <br/>" +
             "NOTE: for GraphQL testing instructions, please go through the README file in the root directory";
     }
