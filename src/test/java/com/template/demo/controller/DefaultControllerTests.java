@@ -21,9 +21,6 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
-/**
- * @author nsingotam
- */
 @SpringBootTest
 @TestPropertySource(locations = "classpath:application.properties")
 public class DefaultControllerTests {
